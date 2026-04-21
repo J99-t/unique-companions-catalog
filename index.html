@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <style>
+        button{
+            cursor: pointer;
+        }
+    </style>
     <link rel="stylesheet" href="project.css">
 </head>
 
@@ -14,7 +19,7 @@
             <ul class="nav">
                 <li><a href="exoticcatalog.html">Exotic Pet Catalog</a></li>
                 <li><a href="safetychecklist.html">Safety Checklist</a></li>
-                <li><a href="#">Get Started</a></li>
+                <li><a href="getstarted.html">Get Started</a></li>
             </ul>
         </nav>
     </header>
@@ -26,7 +31,7 @@
             <p>Deciding to bring an exotic pet into your life is no easy feat. It requires hour of research, specialized habitats, and a long-term commitment to ethical pet care.
                 While the responsibilites are significant, having an exotic friend is certainly exciting. Our guides are here to help you navigate those challenges and ensure safety for your future pets!
             </p>
-            <button type="button">Exotic Catalog</button>
+            <button type="button" onclick="window.location.href='exoticcatalog.html'">Exotic Catalog</button>
         </div>
     </div>
 
@@ -55,7 +60,7 @@
             <p>A unique companion requires unique responsibilites. There are critical factors like the availability of a specialized vet and legality of the pets within your state.
                 Missing even one of these details can lead to a world of trouble for both you and your pet. To learn more about the checklist click below!
             </p>
-            <button type="button">Safety Checklist</button>
+            <button type="button" onclick="window.location.href='safetychecklist.html'">Safety Checklist</button>
         </div>
         <img src="./imgs/Find-Potential-Vets.jpg" alt="Ferret clinic" class="mid-image">
     </div>

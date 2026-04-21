@@ -28,6 +28,12 @@ header a{
     padding: 0;
 }
 
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Mobile layout */
 
 .hero{
@@ -90,6 +96,23 @@ button{
     padding: 40px 0;
 }
 
+.care-guide{
+    background-color: #FFFFFF;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 60px;
+}
+
+.guide-content{
+    display: flex;
+    flex-direction: column;
+}
+
 /* Desktop View */
 
 @media (min-width: 768px){
@@ -128,6 +151,10 @@ button{
     align-items: center;
     padding: 40px 0;
     gap: 40px;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 }

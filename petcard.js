@@ -3,37 +3,37 @@ const petData = [
         name: 'Axolotls',
         tier: 'Intermediate',
         image: './imgs/axolotlIcon.png',
-        link: '#'
+        link: './pet-pages/axolotls.html'
     },
     {
         name: 'Capybaras',
         tier: 'Advanced',
         image: './imgs/capybaraIcon.jpg',
-        link: '#'
+        link: './pet-pages/capybaras.html'
     },
     {
         name: 'Ball Pythons',
         tier: 'Beginner',
         image: './imgs/ballPythonIcon.png',
-        link: '#'
+        link: './pet-pages/ballPythons.html'
     },
     {
         name: 'Fennec Foxes',
         tier: 'Advanced',
         image: './imgs/fennecFoxIcon.png',
-        link: '#'
+        link: './pet-pages/fennecFoxes.html'
     },
     {
         name: 'Ferrets',
         tier: 'Beginner',
         image: './imgs/ferretIcon.png',
-        link: '#'
+        link: './pet-pages/ferrets.html'
     },
     {
         name: 'Southern Flying Squirrels',
         tier: 'Intermediate',
         image: './imgs/southernFlyingSquirrelIcon.jpg',
-        link: '#'
+        link: './pet-pages/southernFlyingSquirrel.html'
     }
 ]
 
