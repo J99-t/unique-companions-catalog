@@ -1,10 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
     padding: 0;
     background-color: #DDF1EF;
     color: #2F4F4F;
     font-family: Inter;
-    font-size: large;
+    font-size: 1.1rem;
 }
 
 header{
@@ -41,7 +45,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 10px;
 }
 
 .hero-image{
@@ -97,20 +101,61 @@ button{
 }
 
 .care-guide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
+    padding-bottom: 20px;
 }
 
 .flex-container{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 20px;
 }
 
 .guide-content{
     display: flex;
     flex-direction: column;
+    padding: 40px;
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+}
+
+.box-container{
+    height: auto;
+    max-width: 800px;
+}
+
+.bullet-list{
+    padding-left: 0;
+}
+
+.habitat-image{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.icon-image{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.pet-pages nav{
+    font-size: 1.1rem;
+}
+
+.pet-pages {
+    font-size: 1.5rem;
 }
 
 /* Desktop View */
@@ -159,14 +204,36 @@ button:hover {
 
 }
 
+.difficulty-section{
+    text-align:center;
+    padding: 60px 20px;
+}
+
+.difficulty-summary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px auto;
+}
+
+.difficulty-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin: 0 auto;
+}
+
 .how-to-adopt{
     background-image: url(./imgs/palm-fronds-background.png);
     display: flex;
+    flex-direction: column;
     background-color: #F2FAF8;
     justify-content: center;
     align-items: center;
     padding: 50px 20px;
-    gap: 60px;
 }
 
 footer{
@@ -174,14 +241,14 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 10px
+    padding: 10px 0px
 }
 
 /* Pet cards */
 
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 40px 20px;
     max-width: 1200px;
@@ -191,7 +258,7 @@ footer{
 .pet-card {
     display: flex;
     flex-direction: column;
-    height: 350px;
+    height: 450px;
     background-color: #FFFFFF;
     border-radius: 12px;
     box-shadow: 0 2px 6px black;
@@ -210,6 +277,7 @@ footer{
 .pet-image-box img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 
 .pet-name-box {
@@ -228,4 +296,126 @@ footer{
 #home-featured-pets{
     padding: 20px;
     gap: 20px;
+}
+
+.stat-card{
+    background: #f9f9f9;
+    border: 1px solid #E0EEED;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover{
+    transform: translateY(-5px);
+    border-color: #068385;
+}
+
+.stat-icon{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.stat-score {
+    font-weight: bold;
+    color: #068385;
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+.stat-card p{
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+footer{
+    background-color: #2F4F4F;
+    color: #FFFFFF;
+    padding: 0px 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.disclaimer {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #DDF1EF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgb(255, 255, 255, .1);
+    padding-top: 10px;
+    font-size: 0.8rem;
+}
+
+.header-box {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+
+.check-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid #E0EEED;
+}
+
+.check-text{
+    margin: 0;
+    cursor: pointer;
+    color: #2F4F4F;
+    transition: color 0.2s;
+}
+
+.check-text:hover{
+    color: #068385;
+}
+
+.check-text p {
+    margin: 5px 0 0 0;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    accent-color: #068385;
+}
+
+.padding{
+    padding: 40px;
 }

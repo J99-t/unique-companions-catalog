@@ -33,7 +33,7 @@ const petData = [
         name: 'Southern Flying Squirrels',
         tier: 'Intermediate',
         image: './imgs/southernFlyingSquirrelIcon.jpg',
-        link: './pet-pages/southernFlyingSquirrel.html'
+        link: './pet-pages/southernFlyingSquirrels.html'
     }
 ]
 
